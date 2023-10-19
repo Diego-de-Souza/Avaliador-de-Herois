@@ -118,6 +118,7 @@ input {
     font-size: 1.2em;
     margin-top: 0px;
     padding-top: 0px;
+    text-indent: 1em;
 }
 
 .mensagemSuperior {
@@ -130,7 +131,7 @@ input {
 }
 
 .alertError{
-    display: block;
+    display: none;
     width: 100%;
     text-align: end;
     color: red;
