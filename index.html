@@ -3,42 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style/geral.css">
+    
     <title>Avaliador de Heróis</title>
 </head>
 <body>
+    
     <main>
-        <section id="container-principal">
-            <h1> Bem vindo ao Avaliador de Heróis</h1>
-            <form action="">
-                <div>
-                    <span class="mensagemSuperior">*É obrigatório inserir o nome do Herói</span>
-                    <div class="formInput">
-                        <label for="nome_Heroi">Digite o nome do herói: </label>
-                        <input type="text" name="nomeHeroi" id="nome_Heroi" >
-                    </div>
-                    <span class="alertError">O nome do Heroi deve ter no minimo 3 letras</span>
-                </div>
-                <div>
-                    <span class="mensagemSuperior">*É obrigatório inserir o XP do Herói</span>
-                    <div class="formInput">
-                        <label for="number_XP">Digite o XP do Herói: </label>
-                        <input type="text" name="numberXP" id="number_XP" >
-                    </div>
-                    <span class="alertError">O valor digitado deve ser maior que 0(zero)</span>
-                </div>
-                <button id="btnSubmit">Enviar</button>
-            </form>
-        </section>
-        <div id="pop-up">
-             <div id="header_message">
-                <h2>Nivel de Herói</h2>
-                <button id="fecharMessage">X</button>
-             </div>
-            <p id="textP"></p>
-        </div>
+        <button class="btnDirect"><a href="pages/avaliadorHerois.html">Avaliador de Heróis</a></button>
+        <button class="btnDirect"><a href="pages/avaliadorDeBatalhas.html">Avaliador de batalhas</a></button>
     </main>
+        
 </body>
 </html>
 

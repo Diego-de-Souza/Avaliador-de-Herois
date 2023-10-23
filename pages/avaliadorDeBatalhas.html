@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/avaliadorBatalhas.css">
+    <script src="../script/avaliadorBatalhas.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button id="return_avaliador"><a href="../index.html">&#8592; voltar</a></button>
+    </header>
+    <main>
+        <section id="container-principal">
+            <h1> Bem vindo ao Avaliador de Batalhas</h1>
+            <form action="">
+                <div>
+                    <span class="mensagemSuperior">*É obrigatório inserir o nome do Herói</span>
+                    <div class="formInput">
+                        <label for="nome_Heroi">Nome do herói: </label>
+                        <input type="text" name="nomeHeroi" id="nome_Heroi" >
+                    </div>
+                    <span class="alertError">O nome do Heroi deve ter no minimo 3 letras</span>
+                </div>
+                <div>
+                    <span class="mensagemSuperior">*É obrigatório inserir a quant. vitórias</span>
+                    <div class="formInput">
+                        <label for="qtdVitorias">Quant. de vitórias: </label>
+                        <input type="text" name="qtd_Virotias" id="qtdVitorias" >
+                    </div>
+                    <span class="alertError">O valor digitado deve ser maior que 0(zero)</span>
+                </div>
+                <div>
+                    <span class="mensagemSuperior">*É obrigatório inserir a quant. de derrotas</span>
+                    <div class="formInput">
+                        <label for="qtdDerrotas">Quant. de derrotas: </label>
+                        <input type="text" name="qtd_Derrotas" id="qtdDerrotas" >
+                    </div>
+                    <span class="alertError">O valor digitado deve ser maior que 0(zero)</span>
+                </div>
+                <button id="btnEnviar">Enviar</button>
+            </form>
+        </section>
+        <div id="pop-up">
+             <div id="header_message">
+                <h2>Nivel de Herói</h2>
+                <button id="fecharMessage">X</button>
+             </div>
+            <p id="textP"></p>
+        </div>
+    </main>
+</body>
+</html>

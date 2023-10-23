@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: block;
+    position: absolute;
+    width: 100vw;
+}
+
+#return_avaliador {
+    display: block;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 1em 0px 0px 1em;
+    border-radius: 1em;
+}
+
+#return_avaliador > a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url(../img/fundo_ranking.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: #241c34;
+}
+
+#container-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    width: 60%;
+    height: 60%;
+    border: 2px solid black;
+    border-radius: 3rem ;
+    box-shadow: 1px 1px 6px black;
+    background-color: #372b4fc7   ;
+    /*
+    background: rgb(131,19,7);
+    background: -moz-linear-gradient(180deg, rgba(131,19,7,1) 0%, rgba(17,21,221,1) 100%, rgba(17,221,191,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(131,19,7,1) 0%, rgba(17,21,221,1) 100%, rgba(17,221,191,1) 100%);
+    background: linear-gradient(180deg, rgba(131,19,7,1) 0%, rgba(17,21,221,1) 100%, rgba(17,221,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#831307",endColorstr="#11ddbf",GradientType=1);
+    */
+}
+
+h1{
+    margin: 1em 0em;
+    color: #fff;
+}
+
+div{
+    display: block;
+    margin: 1em 0em;
+    color: #fff;
+}
+
+#btnEnviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    width: 10em;
+    height: 2em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    margin: 0px auto;
+    cursor: pointer;
+    background-color: rgb(42, 248, 214);
+}
+
+#pop-up {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    height: 15em;
+    right: 30%;
+    left: 30%;
+    background-image: url(../img/fundo_alert_mess.jpg);
+    background-attachment: local;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#header_message{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 0.7em;
+}
+h2{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding-left: 2em;
+}
+#fecharMessage{
+    display: block;
+    color: #fff;
+    padding: 0.4em 0.5em;
+    background-color: black;
+    margin-right: 2em;
+}
+#textP{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2em;
+    
+}
+.formInput{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0.4em;
+    align-items: center;
+    justify-content: space-between;
+}
+label {
+    font-size: 1.5em;
+}
+input {
+    height: 2em;
+    width: 20em;
+    border-radius: 0.8em;
+    font-size: 1.2em;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-indent: 1em;
+}
+
+.mensagemSuperior {
+    display: block;
+    width: 100%;
+    text-align: end;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #6b6b6b;
+}
+
+.alertError{
+    display: none;
+    width: 100%;
+    text-align: end;
+    color: red;
+}
+
+.alertErrorInput{
+    border: 2px solid red;
+    background-color: rgb(190, 117, 117);
+    color: rgb(188, 3, 3);
+}
