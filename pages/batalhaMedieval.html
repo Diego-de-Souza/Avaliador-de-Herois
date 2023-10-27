@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/batalhaMedieval.css">
+    <script src="../script/batalhaMedieval.js" defer></script>
+    <title>Batalha medieval</title>
+</head>
+<body>
+    <main>
+        <h1>Batalha Medieval</h1>
+        <section id="escolhaGuerreiro">
+            <form action="">
+                <div>
+                    <span class="mensagemSuperior">*É obrigatório inserir o nome</span>
+                    <div class="formInput">
+                        <label for="nome_Heroi" class="labelBatalha">Digite seu nome: </label>
+                        <input type="text" name="nomeHeroi" id="nome_Usuario" class="inputDados">
+                    </div>
+                    <span class="alertError">O nome deve ter no minimo 3 letras</span>
+                </div>
+                <div>
+                    <span class="mensagemSuperior">*É obrigatório inserir o e-mail</span>
+                    <div class="formInput">
+                        <label for="number_XP" class="labelBatalha">Digite seu e-mail: </label>
+                        <input type="text" name="numberXP" id="email_Usuario" class="inputDados">
+                    </div>
+                    <span class="alertError">O valor digitado deve ser um e-mail valido</span>
+                </div>
+                <h2>Escolha seu Herói</h2>
+                <section id="containerBtnHeroi">
+                    <div class="checkBoxOption">
+                        <input type="checkbox" name="monge" id="optionMonge" >
+                        <button class="btnHeroi" id="btnMonge">
+                            <img src="../img/DYlD2oCUMAAJcOm.jpg" alt="Foto herói Monge" srcset="">
+                            Monge</button>
+                    </div>
+                    <div class="checkBoxOption">
+                        <input type="checkbox" name="guerreiro" id="optionGuerreiro">
+                        <button class="btnHeroi" id="btnGuerreiro">
+                            <img src="../img/tumblr_p4rh59GqAI1s66kh1o1_250.png" alt="Foto herói Guerreiro" srcset="">
+                            Guerreiro</button>
+                    </div>
+                    <div class="checkBoxOption">
+                        <input type="checkbox" name="arqueiro" id="optionArqueiro">
+                        <button class="btnHeroi" id="btnArqueiro">
+                            <img src="../img/tumblr_p4rh59GqAI1s66kh1o2_250.png" alt="Foto herói Arqueiro" srcset="">
+                            Arqueiro</button>
+                    </div>
+                </section>
+                <span class="alertError">Você deve escolher um Herói!</span>
+                <button id="btnSubmit">Enviar</button>
+            </form>
+            
+        </section>
+        <section id="batalha">
+            <section id="dadosUsuario">
+                <section id="dadosUsuario__container">
+                    <div>
+                        <label for="nomeJogador">Nome: </label>
+                        <p id="nomeJogador"></p>
+                    </div>
+                    <div>
+                        <label for="emailJogador">e-mail: </label>
+                        <p id="emailJogador"></p>
+                    </div>
+                    <div>
+                        <label for="nomeHeroiJogador">Herói</label>
+                        <p id="nomeHeroiJogador"></p>
+                    </div>
+                </section>
+                <div id="dadosUsuario__xp">
+                    <p>XP => </p>
+                    <p class="XP">100000</p>
+                </div>
+            </section>
+            <section id="campoBatalha">
+                <div id="dadosinimigo__xp">
+                    <p>XP => </p>
+                    <p class="XP" >9000000</p>
+                </div>
+                <img src="../img/scanor.png" alt="" id="imgInimigo">
+            </section>
+            <section id="controleBatalha">
+                <button class="btnAtacar">Atacar1</button>
+                <button class="btnAtacar">Atacar2</button>
+                <button class="btnAtacar">Atacar3</button>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

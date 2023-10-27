@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*configuração de estilização geral do corpo da página*/
+body{
+    background-color: #964b00;
+}
+/*configuração de estilização da main*/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    border-radius: 3rem;
+    border: 3px solid black;
+    margin: auto auto;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px black;
+}
+/*configuração do letreiro principal*/
+h1{
+    display: block;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 0px;
+}
+/*configuração do caontainer que encapsula o formulario, botão de escolha e botão de confirmação*/
+#escolhaGuerreiro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/*configuração da estilização do formulario*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+/*Configuração de estilização do container dos dados de entrada*/
+.formInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*configuração da estilização da mensagem superior do input*/
+.mensagemSuperior{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    color: rgb(46, 45, 45);
+}
+/*configuração de estilização dos label*/
+.labelBatalha{
+    display: flex;
+    width: 30%;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+/*configuração de estilização da caixa de entrada de dados*/
+.inputDados{
+    display: flex;
+    width: 70%;
+    height: 2em;
+}
+.alertErrorInput {
+    background-color: rgb(238, 94, 94);
+    border: 2px solid palevioletred;
+}
+/*configuração de estilização de mensagem de erro da inserção de dados*/
+.alertError{
+    display: none;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 1em;
+    color: rgb(233, 13, 13);
+    text-shadow: 1px 1px 2px black;
+}
+/*configuração do letreiro da escolha dos heróis*/
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+/*configuração da estilização do container de encapsulamento dos botões dos heróis*/
+#containerBtnHeroi{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/*configuração da estilização do checkbox de confirmação de escolha do herói*/
+.checkBoxOption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    
+}
+
+/*configuração dos parametros de estilização do botão de escolha do heroi*/.btnHeroi{
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    font-size: 1em;
+    font-weight: 900;
+    height: 8rem;
+    border-radius: 1em;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+/*configuração dos parametros de estilização da imagem do botão de escolha do heroi*/
+img{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+}
+/*configuração de estilo botão confirmação dos dados (enviar)*/
+#btnSubmit{
+    display: block;
+    width: 8rem;
+    height: 3rem;
+    font-size: 2em;
+    margin: 1em auto;
+    border-radius: 0.8em;
+    cursor: pointer;
+}
+
+/*configuração da nova Tela de batalha*/
+#batalha{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0 0 2em 2em;
+}
+/*configuração de estilização dos dados do usuário*/
+#dadosUsuario{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(143, 143, 143);
+}
+#dadosUsuario__container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5em;
+}
+#dadosUsuario__container > div {
+    display: flex;
+    flex-direction: row;
+}
+#dadosUsuario__container > div > label {
+    font-weight: 900;
+}
+#dadosUsuario__container > div > p{
+    display: block;
+    margin-left: 1em;
+}
+#dadosUsuario__xp{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5em;
+    align-items: center;
+    width: 20%;
+}
+/*configuração de estilização do container do campo de batalha*/
+#campoBatalha{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25em;
+    align-items: center;
+    
+    background-color: chartreuse;
+}
+/*configuração de estilização da imagem de campo de batalha*/
+#campoBatalha > img {
+    display: flex;
+    width: 30%;
+    height: 80%;
+    
+}
+/*configuração de estilização do container da dados XP inimigo*/
+#dadosinimigo__xp{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5em;
+    align-items: center;
+    width: 100px;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 0.5em;
+    background-color: cornflowerblue;
+    margin-top: 0.3em;
+    padding: 0.3em;
+}
+/*confiduração de estilização do container de controle de batalha*/
+#controleBatalha{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 1em;
+
+}
+/*configuração de estilização do botão de ataque*/
+.btnAtacar{
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 3em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.2em;
+}
