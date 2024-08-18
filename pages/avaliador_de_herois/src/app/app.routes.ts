@@ -27,5 +27,6 @@ export const routes: Routes = [
         path: 'em-construcao',
         title: 'Em_contrucao',
         component: EmConstrucaoComponent
-    }
+    },
+    { path: '**', redirectTo: '' }
 ];
